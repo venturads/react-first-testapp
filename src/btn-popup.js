@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function () {
-  
+function goPopup() {
+  alert(123);
+}
+let el = document.getElementById('alertButton');
+if (el) {
+  el.addEventListener('click', goPopup, false);
 }
